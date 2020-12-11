@@ -2,6 +2,7 @@ package com.example.myflexistay.Fragment;
 
 import android.app.DatePickerDialog;
 import android.content.Context;
+import android.content.Intent;
 import android.os.Bundle;
 
 import androidx.fragment.app.Fragment;
@@ -23,6 +24,7 @@ import android.widget.LinearLayout;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import com.example.myflexistay.Activity.ConfirmationActivity;
 import com.example.myflexistay.Adapter.Apartment_Type_Adapter;
 import com.example.myflexistay.Adapter.Availabilty_Adapter;
 import com.example.myflexistay.Adapter.Property_Age_Adapter;
@@ -298,8 +300,10 @@ public class PropertyDetailsFragment7 extends Fragment {
         apiClient.apiInterface.postPublishListing(data).enqueue(new Callback<JsonObject>() {
             @Override
             public void onResponse(Call<JsonObject> call, Response<JsonObject> response) {
-                Toast.makeText(getActivity(), "Success List !", Toast.LENGTH_SHORT).show();
+                if (response.isSuccessful()){
+                    Toast.makeText(getActivity(), "Success List !", Toast.LENGTH_SHORT).show();
 
+                }
             }
 
             @Override

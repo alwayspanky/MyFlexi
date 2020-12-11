@@ -15,6 +15,7 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.view.animation.TranslateAnimation;
+import android.view.inputmethod.EditorInfo;
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
 import android.widget.EditText;
@@ -52,6 +53,8 @@ import retrofit2.Callback;
 import retrofit2.Response;
 import retrofit2.Retrofit;
 import retrofit2.converter.gson.GsonConverterFactory;
+
+import static android.content.ContentValues.TAG;
 
 /**
  * A simple {@link Fragment} subclass.
@@ -187,7 +190,9 @@ public class PropertyDetailsFragment1 extends Fragment {
         edt_bhk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
+//                edt_bhk.setShowSoftInputOnFocus(false);
                 selectDropDownName.setText("Select BHK type");
+//                Log.d(TAG , "onClick: apartment");
                 hideKeyBoard(edt_bhk);
                 OkHttpClient client1 = new OkHttpClient().newBuilder()
                         .connectTimeout(80, TimeUnit.SECONDS)
@@ -486,9 +491,11 @@ public class PropertyDetailsFragment1 extends Fragment {
 
         }
     }
+
     public void hideKeyBoard(View view){
-        final InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(Context.INPUT_METHOD_SERVICE);
+        InputMethodManager imm = (InputMethodManager) getActivity().getSystemService(getActivity().INPUT_METHOD_SERVICE);
         imm.hideSoftInputFromWindow(view.getWindowToken(), 0);
+
     }
 
     public void Functioncalling(){

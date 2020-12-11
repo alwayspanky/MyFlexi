@@ -32,11 +32,12 @@
             <EditText
                 android:id="@+id/edt_apartment"
                 android:layout_width="match_parent"
+                android:editable="false"
+                android:windowSoftInputMode="stateHidden"
                 android:layout_height="60dp"
                 android:background="@drawable/edittext_background"
                 android:drawableEnd="@drawable/ic_down_arrow"
                 android:hint="Select"
-                android:editable="false"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:textColor="@color/colorPrimary" />
@@ -73,10 +74,12 @@
                 android:id="@+id/edt_bhk"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:editable="false"
                 android:background="@drawable/edittext_background"
                 android:drawableEnd="@drawable/ic_down_arrow"
                 android:hint="Select"
                 android:paddingLeft="16dp"
+                android:windowSoftInputMode="stateHidden"
                 android:paddingRight="16dp"
                 android:textColor="@color/colorPrimary" />
 
@@ -157,6 +160,8 @@
                 android:id="@+id/edt_property_age"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
+                android:editable="false"
+                android:windowSoftInputMode="stateHidden"
                 android:background="@drawable/edittext_background"
                 android:drawableEnd="@drawable/ic_down_arrow"
                 android:hint="Select"
@@ -245,6 +250,28 @@
                 android:layout_marginLeft="3dp"
                 android:layout_marginTop="24dp"
                 android:layout_marginBottom="16dp"
+                android:text="Water Supply"
+                android:textColor="@color/colorBlack" />
+
+            <EditText
+                android:id="@+id/edt_waterSupply"
+                android:layout_width="match_parent"
+                android:editable="false"
+                android:layout_height="60dp"
+                android:background="@drawable/edittext_background"
+                android:drawableEnd="@drawable/ic_down_arrow"
+                android:hint="Select"
+                android:paddingLeft="16dp"
+                android:paddingRight="16dp"
+                android:textColor="@color/colorPrimary" />
+
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="3dp"
+                android:layout_marginTop="24dp"
+                android:layout_marginBottom="16dp"
                 android:text="Facing"
                 android:textColor="@color/colorBlack" />
 
@@ -254,26 +281,7 @@
                 android:layout_height="60dp"
                 android:background="@drawable/edittext_background"
                 android:drawableEnd="@drawable/ic_down_arrow"
-                android:hint="Select"
-                android:paddingLeft="16dp"
-                android:paddingRight="16dp"
-                android:textColor="@color/colorPrimary" />
-
-            <TextView
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:layout_marginLeft="3dp"
-                android:layout_marginTop="24dp"
-                android:layout_marginBottom="16dp"
-                android:text="Water Supply"
-                android:textColor="@color/colorBlack" />
-
-            <EditText
-                android:id="@+id/edt_waterSupply"
-                android:layout_width="match_parent"
-                android:layout_height="60dp"
-                android:background="@drawable/edittext_background"
-                android:drawableEnd="@drawable/ic_down_arrow"
+                android:editable="false"
                 android:hint="Select"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"

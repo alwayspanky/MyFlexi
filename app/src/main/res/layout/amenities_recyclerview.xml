@@ -21,7 +21,6 @@
             android:id="@+id/radio_button_lift"
             android:layout_width="wrap_content"
             android:layout_height="60dp"
-
             android:drawablePadding="8dp"
             />
 

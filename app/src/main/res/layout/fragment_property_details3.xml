@@ -93,6 +93,7 @@
 
             <EditText
                 android:id="@+id/edt_preferred"
+                android:editable="false"
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:hint="Select"
@@ -118,6 +119,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="60dp"
                 android:hint="Select"
+                android:editable="false"
                 android:textColor="@color/colorPrimary"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
@@ -137,6 +139,7 @@
             <EditText
                 android:id="@+id/edt_parking"
                 android:layout_width="match_parent"
+                android:editable="false"
                 android:layout_height="60dp"
                 android:hint="Select"
                 android:textColor="@color/colorPrimary"

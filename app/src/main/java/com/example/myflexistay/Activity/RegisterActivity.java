@@ -43,8 +43,6 @@ public class RegisterActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_register);
 
-
-
         fname = findViewById(R.id.edt1);
         lname = findViewById(R.id.edt2);
         mobile = findViewById(R.id.edt3);
@@ -76,6 +74,7 @@ public class RegisterActivity extends AppCompatActivity {
 
             @Override
             public void onTextChanged(CharSequence s, int start, int before, int count) {
+                
                 sendOtp.setVisibility(View.VISIBLE);
             }
 

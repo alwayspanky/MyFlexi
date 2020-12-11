@@ -28,7 +28,7 @@ public class ProfileActivity extends AppCompatActivity {
 
 
     ApiClient apiClient;
-    TextView myListing;
+    TextView myListing, wallet, mywhishlist;
     ArrayList<ProfileModel> profileModels;
 
     @Override
@@ -39,12 +39,31 @@ public class ProfileActivity extends AppCompatActivity {
         apiClient = new ApiClient();
         profileModels = new ArrayList<>();
         myListing = findViewById(R.id.Pro1);
+        wallet = findViewById(R.id.Pro3);
+        mywhishlist = findViewById(R.id.Pro2);
 
         myListing.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(ProfileActivity.this, MyListing_Activity.class);
                 startActivity(intent);
+            }
+        });
+
+        mywhishlist.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, PropertyListingActivity.class);
+                startActivity(intent);
+            }
+        });
+
+        wallet.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(ProfileActivity.this, WalletActivity.class);
+                startActivity(intent);
+                finish();
             }
         });
 
@@ -93,4 +112,5 @@ public class ProfileActivity extends AppCompatActivity {
         startActivity(intent);
         finish();
     }
+
 }

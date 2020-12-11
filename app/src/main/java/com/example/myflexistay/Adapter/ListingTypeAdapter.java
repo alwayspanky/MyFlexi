@@ -1,6 +1,7 @@
 package com.example.myflexistay.Adapter;
 
 import android.content.Context;
+import android.graphics.Color;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -19,6 +20,7 @@ public class ListingTypeAdapter extends RecyclerView.Adapter<ListingTypeAdapter.
 
     Context context;
     ArrayList<ListingTypeModel.ListingsBean> listingTypeList;
+    int lastClickedPosition = -1;
 
     public ListingTypeAdapter(Context context, ArrayList<ListingTypeModel.ListingsBean> listingTypeList) {
         this.context = context;
@@ -37,6 +39,13 @@ public class ListingTypeAdapter extends RecyclerView.Adapter<ListingTypeAdapter.
 
        ListingTypeModel.ListingsBean listType = listingTypeList.get(position);
         holder.btn.setText(listType.getName());
+        holder.btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+
+            }
+        });
+
     }
 
     @Override
@@ -50,8 +59,8 @@ public class ListingTypeAdapter extends RecyclerView.Adapter<ListingTypeAdapter.
 
         public viewHolder(@NonNull View itemView) {
             super(itemView);
-
             btn = itemView.findViewById(R.id.button_listing);
+
         }
     }
 }
