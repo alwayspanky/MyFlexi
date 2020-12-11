@@ -36,6 +36,7 @@
                 android:background="@drawable/edittext_background"
                 android:drawableEnd="@drawable/ic_down_arrow"
                 android:hint="Select"
+                android:editable="false"
                 android:paddingLeft="16dp"
                 android:paddingRight="16dp"
                 android:textColor="@color/colorPrimary" />

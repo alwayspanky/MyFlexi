@@ -1,4 +1,4 @@
-package com.example.myflexistay;
+package com.example.myflexistay.Activity;
 
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.fragment.app.Fragment;
@@ -18,6 +18,7 @@ import com.bumptech.glide.Glide;
 import com.example.myflexistay.Fragment.Flatmate;
 import com.example.myflexistay.Fragment.FullHouse;
 import com.example.myflexistay.Fragment.PGFragment;
+import com.example.myflexistay.R;
 
 public class Rentscreen extends AppCompatActivity {
 

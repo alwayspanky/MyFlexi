@@ -22,7 +22,7 @@
         <activity android:name=".Activity.RegisterActivity1"/>
         <activity android:name=".Activity.PropertyListingActivity"></activity>
         <activity android:name=".Activity.PropertyDetailsActivity"></activity>
-        <activity android:name=".Rentscreen" />
+        <activity android:name=".Activity.Rentscreen" />
         <activity android:name=".Activity.LoginActivity"/>
         <activity android:name=".Activity.PostPropertyActivity" />
         <activity android:name=".Activity.MainActivity" />

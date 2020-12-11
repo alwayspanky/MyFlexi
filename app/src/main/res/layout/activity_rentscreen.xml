@@ -6,7 +6,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:id="@+id/rentid"
-    tools:context=".Rentscreen">
+    tools:context=".Activity.Rentscreen">
 
 
     <ScrollView
@@ -40,45 +40,48 @@
                     android:textSize="25sp"
                     android:textStyle="bold" />
 
+
+            </androidx.appcompat.widget.Toolbar>
+
     <LinearLayout
         android:id="@+id/linear_layout1"
         android:layout_width="match_parent"
         android:layout_height="50dp"
         android:orientation="horizontal"
         android:gravity="center"
-        app:layout_constraintTop_toBottomOf="@id/toolbar" >
+        app:layout_constraintTop_toBottomOf="@id/toolbar"
+        android:weightSum="3">
 
         <ImageView
             android:id="@+id/img4"
             android:src="@drawable/progress"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_gravity="start" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
 
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:text="Rent"
-            android:layout_marginLeft="150dp"
-            android:layout_gravity="center"
+            android:gravity="center"
             android:textSize="24sp"
-            android:textColor="@color/colorPrimary"/>
+            android:textColor="@color/colorPrimary"
+            android:layout_weight="1"/>
 
 
         <ImageView
             android:src="@drawable/cancel"
-            android:layout_gravity="end"
             android:id="@+id/img5"
-            android:layout_width="50dp"
-            android:layout_height="50dp"
-            android:layout_marginLeft="120dp" />
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_weight="1"/>
 
     </LinearLayout>
 
     <View
         android:id="@+id/divider"
         android:layout_width="match_parent"
-        android:layout_height="1dp"
+        android:layout_height="0.5dp"
         android:layout_marginTop="16dp"
         android:layout_marginLeft="30dp"
         android:layout_marginRight="30dp"
@@ -94,14 +97,14 @@
         android:layout_marginEnd="32dp"
         android:focusable="false"
         app:iconifiedByDefault="false"
+        android:background="@drawable/search_bg"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/divider"
-        app:queryHint="Search"/>
+        app:queryHint="Search localities"/>
 
 
 
-            </androidx.appcompat.widget.Toolbar>
 
 
 
@@ -149,6 +152,7 @@
                         android:button="@null"
                         android:gravity="center"
                         android:text="PG Hostel"
+                        android:checked="true"
                         android:textColor="@color/toggle_text_color"
                         android:textStyle="bold" />
 

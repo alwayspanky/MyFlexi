@@ -25,6 +25,7 @@
                     android:id="@+id/card1"
                     android:layout_height="wrap_content"
                     android:layout_margin="16dp"
+                    app:cardCornerRadius="10dp"
                     tools:ignore="MissingConstraints">
 
 
@@ -171,7 +172,9 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     app:layout_constraintTop_toBottomOf="@id/card1"
-                    android:layout_margin="16dp">
+                    android:layout_margin="16dp"
+                    android:paddingBottom="10dp"
+                    app:cardCornerRadius="10dp">
 
 
                     <LinearLayout
@@ -233,7 +236,8 @@
                     android:layout_width="match_parent"
                     android:layout_marginBottom="20dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp">
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -293,7 +297,8 @@
                     app:layout_constraintTop_toBottomOf="@id/card2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp">
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="10dp">
 
 
                     <LinearLayout
@@ -387,7 +392,8 @@
                     android:layout_width="match_parent"
                     android:layout_marginBottom="20dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp">
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"
@@ -467,7 +473,8 @@
                     app:layout_constraintTop_toBottomOf="@id/card2"
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp">
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="10dp">
 
 
                     <LinearLayout
@@ -563,7 +570,8 @@
                     android:layout_width="match_parent"
                     android:layout_marginBottom="20dp"
                     android:layout_height="wrap_content"
-                    android:layout_margin="16dp">
+                    android:layout_margin="16dp"
+                    app:cardCornerRadius="10dp">
 
                     <LinearLayout
                         android:layout_width="match_parent"

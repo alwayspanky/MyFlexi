@@ -14,6 +14,7 @@ import android.view.View;
 
 import android.view.inputmethod.InputMethodManager;
 import android.widget.Button;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.RadioButton;
 
@@ -27,11 +28,11 @@ import com.google.android.material.button.MaterialButton;
 public class MainActivity extends AppCompatActivity {
 
     Toolbar toolbar;
-    private SearchView searchView;
     RadioButton Rent, buy;
     private ImageView img1, img2, img3, imgbanner;
     Button button;
     MaterialButton rentbtn , buybtn;
+    EditText search_view;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -48,6 +49,15 @@ public class MainActivity extends AppCompatActivity {
 
 
         button = findViewById(R.id.button);
+        search_view = findViewById(R.id.searchView);
+
+        search_view.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent filterIntent = new Intent(MainActivity.this,Rentscreen.class);
+                startActivity(filterIntent);
+            }
+        });
 
 
         imgbanner = findViewById(R.id.img_home_banner);

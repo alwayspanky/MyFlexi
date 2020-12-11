@@ -15,6 +15,7 @@
             <LinearLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
+                android:paddingBottom="10dp"
                 android:orientation="vertical">
 
 
@@ -24,7 +25,8 @@
             android:id="@+id/card1"
             android:layout_height="wrap_content"
             android:layout_margin="16dp"
-            tools:ignore="MissingConstraints">
+            tools:ignore="MissingConstraints"
+            app:cardCornerRadius="10dp">
 
 
 
@@ -85,7 +87,9 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             app:layout_constraintTop_toBottomOf="@id/card1"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            app:cardCornerRadius="10dp"
+            android:paddingBottom="10dp">
 
 
             <LinearLayout
@@ -150,7 +154,8 @@
             app:layout_constraintTop_toBottomOf="@id/card2"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="16dp">
+            android:layout_margin="16dp"
+            app:cardCornerRadius="10dp">
 
 
             <LinearLayout
@@ -243,8 +248,10 @@
         app:layout_constraintTop_toBottomOf="@id/car3"
         android:layout_width="match_parent"
         android:layout_marginBottom="20dp"
+        app:cardCornerRadius="10dp"
         android:layout_height="wrap_content"
-        android:layout_margin="16dp">
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp">
 
 
             <LinearLayout
@@ -253,6 +260,7 @@
                 android:layout_marginTop="8dp"
                 android:layout_marginLeft="15dp"
                 android:layout_marginRight="15dp"
+                android:layout_marginBottom="10dp"
                 android:orientation="horizontal"
                 android:weightSum="2">
 
